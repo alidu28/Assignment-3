@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-image: url(./guide\ icon/pattern-background-desktop.svg);
+    font-size: 16px;
+    display: flex;
+    height: 100vh;
+}
+
+p{
+    color:  hsl(224, 23%, 55%);
+}
+
+.component{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+   border: 2px;
+   text-align: center;
+  width: 614px;
+  height: 950px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+img{
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 300px;
+    width: 614px;
+}
+
+.order{
+    padding: 50px;
+    font-size: 1.6rem;
+}
+
+.order p{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding: 20px;
+}
+
+.pic img{
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    flex-direction: row;
+    
+}
+
+.pic{
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+span{
+    color: hsl(224, 23%, 55%);
+}
+
+.buttons{
+    padding: 50px;
+}
+
+.button{
+    background-color: hsl(245, 75%, 52%);
+    width: 450px;
+    height: 70px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border-style: none;
+    color: hsl(225, 100%, 98%);
+}
+
+.but{
+    background-color: hsl(225, 100%, 98%);
+    width: 450px;
+    height: 70px;
+    font-size: 1.3rem;
+    border-style: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.pic span p{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
