@@ -1,97 +1,208 @@
+/* Universal style starts */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    align-items: center;
-    justify-content: center;
-    background-image: url(./guide\ icon/pattern-background-desktop.svg);
-    font-size: 16px;
-    display: flex;
-    height: 100vh;
-}
-
-p{
-    color:  hsl(224, 23%, 55%);
-}
-
 .component{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-   border: 2px;
-   text-align: center;
-  width: 614px;
-  height: 950px;
-  background-color: hsl(225, 100%, 98%);
-}
-
-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 300px;
-    width: 614px;
-}
-
-.order{
-    padding: 50px;
-    font-size: 1.6rem;
-}
-
-.order p{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding: 20px;
-}
-
-.pic img{
-    height: 48px;
-    width: 48px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-    flex-direction: row;
-    
-}
-
-.pic{
-    display: flex;
-    font-size: 1.5rem;
-    flex-direction: column;
-}
-
-span{
-    color: hsl(224, 23%, 55%);
-}
-
-.buttons{
-    padding: 50px;
-}
-
-.button{
-    background-color: hsl(245, 75%, 52%);
-    width: 450px;
-    height: 70px;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    border-style: none;
-    color: hsl(225, 100%, 98%);
-}
-
-.but{
     background-color: hsl(225, 100%, 98%);
-    width: 450px;
-    height: 70px;
-    font-size: 1.3rem;
-    border-style: none;
-    color: hsl(224, 23%, 55%);
+    border: transparent;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 0 gainsboro;
+ }
+
+ .component .annual{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0;
 }
 
-.pic span p{
-    color: hsl(245, 75%, 52%);
-    text-decoration: underline;
+.component .annu{
+    display: flex;
+    align-items: center;
+}
+/* Universal style ends */
+
+
+/* Media query for desktop */
+@media only screen and (min-width: 1000px){
+    body{
+        background-image: url(./guide\ icon/pattern-background-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+     }
+
+     .component img{
+        width: 370px;
+        height: 170px;
+        border: transparent;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .component .text{
+        width: 20rem;
+        margin: 1.5rem auto 0 auto;
+    }
+
+    .component .text h3{
+        font-size: 1.6rem;
+        margin: .5rem 0 1rem 0;
+    }
+
+    .component .text p{
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .component .annual img{
+        width: 43px;
+        height: 43px;
+        margin:  0 .8rem 0 0;
+    }
+
+    .component .annual-text h4{
+        color:  hsl(223, 47%, 23%);
+    }
+
+    .component .annual-text p{
+        color: hsl(224, 23%, 55%);
+        margin: .3rem 0 0 0;
+    }
+
+    .component .annual a{
+        color: hsl(245, 75%, 52%);
+    }
+
+    .component .btns{
+        display: grid;
+        grid-row-gap: 1rem;
+        width: 18rem;
+        margin: .9rem auto 2.5rem auto;
+    }
+
+    .component .btns #pro{
+        background-color: hsl(245, 75%, 52%);
+        padding: .9rem;
+        border: transparent;
+        border-radius: .7rem;
+        color: hsl(225, 100%, 94%);
+        box-shadow: 0 .8rem 1rem 0 rgb(202, 200, 200);
+    }
+
+    .component .btns #cancel{
+        color: hsl(224, 23%, 55%);
+        border: transparent;
+        background-color: transparent;
+        margin: .7rem 0 0 0;
+    }
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 500px){ 
+    body{
+        background-image: url(./guide\ icon/pattern-background-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+     }
+
+     .component{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+        background-color: hsl(225, 100%, 98%);
+        border: transparent;
+        border-radius: .3rem;
+        box-shadow: 0 1rem 1rem 0 gainsboro;
+     }
+
+    .component img{
+        width: 120px;
+        height: 60px;
+        border: transparent;
+        border-radius: .3rem .3rem 0 0;
+    }
+
+    .component .text{
+        width: 6rem;
+        margin: .2rem auto 0 auto;
+    }
+
+    .component .text h3{
+        font-size: .5rem;
+        margin: .2rem 0 .4rem 0;
+    }
+
+    .component .text p{
+        font-size: 5px;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .component .annual{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: .8rem 0;
+    }
+
+    .component .annual img{
+        width: 14px;
+        height: 14px;
+        margin:  0 .5rem 0 0;
+    }
+
+    .component .annual-text h4{
+        color:  hsl(223, 47%, 23%);
+        font-size: .35rem;
+    }
+
+    .component .annual-text p{
+        color: hsl(224, 23%, 55%);
+        margin: .1rem .4rem 0 0;
+        font-size: 4.8px;
+    }
+
+    .component .annual a{
+        color: hsl(245, 75%, 52%);
+        font-size: 5px;
+    }
+
+    .component .btns{
+        display: grid;
+        grid-row-gap: .4rem;
+        width: 6.5rem;
+        margin: .4rem auto .4rem auto;
+    }
+
+    .component .btns #pro{
+        background-color: hsl(245, 75%, 52%);
+        padding: .3rem;
+        border: transparent;
+        border-radius: .2rem;
+        color: hsl(225, 100%, 94%);
+        box-shadow: 0 .8rem 1rem 0 rgb(202, 200, 200);
+        font-size: 4.5px;
+    }
+
+    .component .btns #cancel{
+        color: hsl(224, 23%, 55%);
+        border: transparent;
+        background-color: transparent;
+        margin: 0 0 .5rem 0;
+        font-size: 4.5px;
+    }
 }
